@@ -2,54 +2,50 @@ project:
   type: website
   
 website: 
-  page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  page-navigation: true #sidebar
+  title: "Phylogenetics and Phylodynamics" 
+  site-url: "https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/" 
+  repo-url: https://github.com/laynajohnson/intro-to-phylogenetics-phylodynamics 
   repo-actions: [edit, issue]
   
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2024"
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "AJ, 2026"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
     pinned: true
     align: center
-    tools: 
-      - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
-      - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
 
     style: "docked"
     search: true
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
-        contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
+        text: Home
+      - href: contents/pop_level_epi.qmd
+        text: Population-Level Epidemiological Models
+      - href: contents/evol_trees.qmd
+        text: Phylogenetics: Understanding Evolutionary Trees
+      - href: contents/phylodynamics.qmd
+        text: Phylodynamics
+      - href: contents/mini_analysis.qmd
+        text: Mini Analysis
+      - href: contents/conclusion.qmd
+      - href: contents/glossary.qmd
+      - href: contents/sources.qmd
 
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, theme.scss] 
+      dark: [cosmo, theme-dark.scss]
     code-copy: true
     code-overflow: wrap
     toc: true
+    execute:
+      filters:
+        - include-files.lua
 
 
 filters:
