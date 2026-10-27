@@ -22,17 +22,20 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: contents/pop_level_epi.qmd
+      - href: content/pop_level_epi.qmd
         text: Population-Level Epidemiological Models
-      - href: contents/evol_trees.qmd
-        text: Phylogenetics: Understanding Evolutionary Trees
-      - href: contents/phylodynamics.qmd
+      - href: content/evol_trees.qmd
+        text: Phylogenetics-Understanding Evolutionary Trees
+      - href: content/phylodynamics.qmd
         text: Phylodynamics
-      - href: contents/mini_analysis.qmd
+      - href: content/mini_analysis.qmd
         text: Mini Analysis
-      - href: contents/conclusion.qmd
-      - href: contents/glossary.qmd
-      - href: contents/sources.qmd
+      - href: content/conclusion.qmd
+        text: Conclusion
+      - href: content/glossary.qmd
+        text: Glossary
+      - href: content/sources.qmd
+        text: Sources
 
 
 format:
