@@ -1,12 +1,16 @@
 ---
 title: "Introduction to Phylogenetics and Phylodynamics"
-subtitle: "Test"
+subtitle: "PUBHEPI 6410, Fall 2026"
 ---
 
 ## Overview
 
-text
+This site seeks to introduce the importance of phylogenetics and phylodynamics in epidemiology and infectious disease dynamics. This website will explore essential topics including population-level epidemiological models, evolutionary trees, and phylodynamics. There is also a mini analysis section which includes R code and simulated data for deeper understanding. Important terms will be defined both in text and in the glossary for reference.
 
 ## Motivation
 
-Text
+In order to understand dynamics of an infectious disease, you have to have some knowledge on how the disease spreads in the human population and how the disease can mutate and evolve over time. 
+
+Think of COVID-19. Epidemiologists must understand how COVID-19 behaves in the population: When someone is infected, how many others are they likely to infect? Does infection create partial immunity, and when can someone become reinfected? What is the incubation period? How do vaccinations disrupt the chain of infection? They also seek to understand mutations of COVID-19: What are the characteristics of mutations like Omicron? How do these mutations come to be and how are they related? 
+
+The interplay of these two systems make it difficult to link pathogen dynamics and genetic diversity quantitatively.(unifying epi and evol)
