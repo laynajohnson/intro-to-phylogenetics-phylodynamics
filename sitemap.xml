@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2024-11-27T19:22:27.229Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/quarto-workflows/rstudio.html</loc>
+    <lastmod>2026-11-03T17:03:33.904Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2024-11-27T19:22:27.261Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/quarto-workflows/browser.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2024-11-27T19:22:27.229Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/index.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2024-11-27T19:22:27.261Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/conclusion.html</loc>
+    <lastmod>2026-11-03T17:03:33.879Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2024-11-27T19:22:27.229Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/evol_trees.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2024-11-27T19:22:27.261Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/phylodynamics.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2024-11-27T19:22:27.261Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/pop_level_epi.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2024-11-27T19:22:27.205Z</lastmod>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/sources.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/mini_analysis.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/content/glossary.html</loc>
+    <lastmod>2026-11-03T17:03:33.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/quarto-workflows/index.html</loc>
+    <lastmod>2026-11-03T17:03:33.904Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/quarto-workflows/jupyter.html</loc>
+    <lastmod>2026-11-03T17:03:33.904Z</lastmod>
   </url>
 </urlset>

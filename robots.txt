@@ -1,1 +1,1 @@
-Sitemap: https://openscapes.github.io/quarto-website-tutorial/sitemap.xml
+Sitemap: https://laynajohnson.github.io/intro-to-phylogenetics-phylodynamics/sitemap.xml
