@@ -14,3 +14,5 @@ In order to understand dynamics of an infectious disease, you have to have some 
 Think of COVID-19. Epidemiologists must understand how COVID-19 behaves in the population: When someone is infected, how many others are they likely to infect? Does infection create partial immunity, and when can someone become reinfected? What is the incubation period? How do vaccinations disrupt the chain of infection? They also seek to understand mutations of COVID-19: What are the characteristics of mutations like Omicron? How do these mutations come to be and how are they related? 
 
 The interplay of these two systems make it difficult to link pathogen dynamics and genetic diversity quantitatively.(unifying epi and evol)
+
+test
