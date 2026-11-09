@@ -24,7 +24,17 @@
     "href": "index.html#motivation",
     "title": "Introduction to Phylogenetics and Phylodynamics",
     "section": "Motivation",
-    "text": "Motivation\nIn order to understand dynamics of an infectious disease, you have to have some knowledge on how the disease spreads in the human population and how the disease can mutate and evolve over time.\nThink of COVID-19. Epidemiologists must understand how COVID-19 behaves in the population: When someone is infected, how many others are they likely to infect? Does infection create partial immunity, and when can someone become reinfected? What is the incubation period? How do vaccinations disrupt the chain of infection? They also seek to understand mutations of COVID-19: What are the characteristics of mutations like Omicron? How do these mutations come to be and how are they related?\nThe interplay of these two systems make it difficult to link pathogen dynamics and genetic diversity quantitatively.(unifying epi and evol)",
+    "text": "Motivation\nIn order to understand dynamics of an infectious disease, you have to have some knowledge on how the disease spreads in the human population and how the disease can mutate and evolve over time.\nThink of COVID-19. Epidemiologists must understand how COVID-19 behaves in the population: When someone is infected, how many others are they likely to infect? Does infection create partial immunity, and when can someone become reinfected? What is the incubation period? How do vaccinations disrupt the chain of infection? They also seek to understand mutations of COVID-19: What are the characteristics of mutations like Omicron? How do these mutations come to be and how are they related?",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#peer-review-notes",
+    "href": "index.html#peer-review-notes",
+    "title": "Introduction to Phylogenetics and Phylodynamics",
+    "section": "Peer Review Notes:",
+    "text": "Peer Review Notes:\n\nright now each tab has some information then next steps at the bottom\nfor this tab, the last thing I will do is briefly mention a foundational paper on the importance of understanding the interplay between population-level epi models (human population spread) and evolution of the disease pathogen (Unifying the Epidemiological and Evolutionary Dynamics of Pathogens)",
     "crumbs": [
       "Home"
     ]
@@ -40,11 +50,21 @@
     ]
   },
   {
+    "objectID": "content/phylodynamics.html",
+    "href": "content/phylodynamics.html",
+    "title": "Phylodynamics",
+    "section": "",
+    "text": "Another very rough draft:\nThis section will connect the SIR models and tree shapes into the framework of phylodynamics. Explains how the evolution of a pathogen relates to its transmission\nBasic phylodynamics definition: the interdisciplinary study of how epidemiological, immunological, and evolutionary processes interact to shape the genetic trees (phylogenies) of pathogens over time and space (Wikipedia)\n\nCombines rapid pathogen evolution (mutations happening over days or months) with host population dynamics (spread, immunity, and behavior) (ScienceDirect.com)",
+    "crumbs": [
+      "Phylodynamics"
+    ]
+  },
+  {
     "objectID": "content/pop_level_epi.html",
     "href": "content/pop_level_epi.html",
     "title": "Population-Level Epidemiologic Models",
     "section": "",
-    "text": "The primary question we are asking here is this: How does a disease spread in the population? We can translate this process into a mathematical model.\nThe main type of model we will focus on is called an SIR model: Susceptible, Infected, Recovered. These are the three compartments, that an individual in the population can be in with regards to a specific disease. There are other more complicated kinds of models as well such as SIRS (meaning you become susceptible to the disease again after some time), SEIR (additional compartment for exposed), and more. Models can become more complex depending on the specific process of some disease. Likewise, the mathematical models can become more complex.\nEach compartmental model for a disease has some specific mathematical equation behind each movement of individuals in the population across the compartments. These equations are called ordinary differential equations (ODEs), which will be explained in this tutorial.\nWe can think about the three compartments of the SIR model as buckets.\n\n\n\nCompartmental model bucket example.\n\n\nDifference equations\n\\[\n\\textcolor{#2042c7}{\\text{Bucket A }(t+1)} =\\textcolor{#2042c7}{\\text{Bucket A }(t)} \\textcolor{gray}{- \\text{flow } A-B}\\\\\n\\textcolor{#4395a3}{\\text{Bucket B }(t+1)} = \\textcolor{#4395a3}{\\text{Bucket B }(t)} \\textcolor{gray}{+ \\text{flow } A-B} \\textcolor{#db8309}{-\\text{flow }B - C}\\\\\n\\textcolor{#8cc9f5}{\\text{Bucket C } (t+1)} = \\textcolor{#8cc9f5}{\\text{Bucket C }(t)} \\textcolor{#db8309}{+\\text{flow }B - C}\n\\]\nNext steps:\n\nadding in and explaining the ODEs that are a part of the SIR model\nConclusion of importance to understanding these models\n\nSource: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler",
+    "text": "The primary question we are asking here is this: How does a disease spread in the population? We can translate this process into a mathematical model.\nThe main type of model we will focus on is called an SIR model: Susceptible, Infected, Recovered. These are the three compartments, that an individual in the population can be in with regards to a specific disease. There are other more complicated kinds of models as well such as SIRS (meaning you become susceptible to the disease again after some time), SEIR (additional compartment for exposed), and more. Models can become more complex depending on the specific process of some disease. Likewise, the mathematical models can become more complex.\nEach compartmental model for a disease has some specific mathematical equation behind each movement of individuals in the population across the compartments. These equations are called ordinary differential equations (ODEs), which will be explained in this tutorial.\nWe can think about the three compartments of the SIR model as buckets.\n\n\n\nCompartmental model bucket example.\n\n\nDifference equations\n\\[\n\\textcolor{#2042c7}{\\text{Bucket A }(t+1)} =\\textcolor{#2042c7}{\\text{Bucket A }(t)} \\textcolor{gray}{- \\text{flow } A-B}\\\\\n\\textcolor{#4395a3}{\\text{Bucket B }(t+1)} = \\textcolor{#4395a3}{\\text{Bucket B }(t)} \\textcolor{gray}{+ \\text{flow } A-B} \\textcolor{#db8309}{-\\text{flow }B - C}\\\\\n\\textcolor{#8cc9f5}{\\text{Bucket C } (t+1)} = \\textcolor{#8cc9f5}{\\text{Bucket C }(t)} \\textcolor{#db8309}{+\\text{flow }B - C}\n\\]\nNext steps:\n\nadding in and explaining the ODEs that are a part of the SIR model. They explain how the population moves through the compartments of the SIR model based on the dynamics of the disease\nConclusion of importance to understanding these models\n\nSource: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler",
     "crumbs": [
       "Epidemiological Models"
     ]
@@ -54,7 +74,7 @@
     "href": "content/pop_level_epi.html#sir-models",
     "title": "Population-Level Epidemiologic Models",
     "section": "",
-    "text": "The primary question we are asking here is this: How does a disease spread in the population? We can translate this process into a mathematical model.\nThe main type of model we will focus on is called an SIR model: Susceptible, Infected, Recovered. These are the three compartments, that an individual in the population can be in with regards to a specific disease. There are other more complicated kinds of models as well such as SIRS (meaning you become susceptible to the disease again after some time), SEIR (additional compartment for exposed), and more. Models can become more complex depending on the specific process of some disease. Likewise, the mathematical models can become more complex.\nEach compartmental model for a disease has some specific mathematical equation behind each movement of individuals in the population across the compartments. These equations are called ordinary differential equations (ODEs), which will be explained in this tutorial.\nWe can think about the three compartments of the SIR model as buckets.\n\n\n\nCompartmental model bucket example.\n\n\nDifference equations\n\\[\n\\textcolor{#2042c7}{\\text{Bucket A }(t+1)} =\\textcolor{#2042c7}{\\text{Bucket A }(t)} \\textcolor{gray}{- \\text{flow } A-B}\\\\\n\\textcolor{#4395a3}{\\text{Bucket B }(t+1)} = \\textcolor{#4395a3}{\\text{Bucket B }(t)} \\textcolor{gray}{+ \\text{flow } A-B} \\textcolor{#db8309}{-\\text{flow }B - C}\\\\\n\\textcolor{#8cc9f5}{\\text{Bucket C } (t+1)} = \\textcolor{#8cc9f5}{\\text{Bucket C }(t)} \\textcolor{#db8309}{+\\text{flow }B - C}\n\\]\nNext steps:\n\nadding in and explaining the ODEs that are a part of the SIR model\nConclusion of importance to understanding these models\n\nSource: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler",
+    "text": "The primary question we are asking here is this: How does a disease spread in the population? We can translate this process into a mathematical model.\nThe main type of model we will focus on is called an SIR model: Susceptible, Infected, Recovered. These are the three compartments, that an individual in the population can be in with regards to a specific disease. There are other more complicated kinds of models as well such as SIRS (meaning you become susceptible to the disease again after some time), SEIR (additional compartment for exposed), and more. Models can become more complex depending on the specific process of some disease. Likewise, the mathematical models can become more complex.\nEach compartmental model for a disease has some specific mathematical equation behind each movement of individuals in the population across the compartments. These equations are called ordinary differential equations (ODEs), which will be explained in this tutorial.\nWe can think about the three compartments of the SIR model as buckets.\n\n\n\nCompartmental model bucket example.\n\n\nDifference equations\n\\[\n\\textcolor{#2042c7}{\\text{Bucket A }(t+1)} =\\textcolor{#2042c7}{\\text{Bucket A }(t)} \\textcolor{gray}{- \\text{flow } A-B}\\\\\n\\textcolor{#4395a3}{\\text{Bucket B }(t+1)} = \\textcolor{#4395a3}{\\text{Bucket B }(t)} \\textcolor{gray}{+ \\text{flow } A-B} \\textcolor{#db8309}{-\\text{flow }B - C}\\\\\n\\textcolor{#8cc9f5}{\\text{Bucket C } (t+1)} = \\textcolor{#8cc9f5}{\\text{Bucket C }(t)} \\textcolor{#db8309}{+\\text{flow }B - C}\n\\]\nNext steps:\n\nadding in and explaining the ODEs that are a part of the SIR model. They explain how the population moves through the compartments of the SIR model based on the dynamics of the disease\nConclusion of importance to understanding these models\n\nSource: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler",
     "crumbs": [
       "Epidemiological Models"
     ]
@@ -242,6 +262,16 @@
     "text": "Troubleshooting\n\nMy changes don’t show up in preview\nMake sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.\n\n\nQuarto render hangs / does not complete\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them."
   },
   {
+    "objectID": "content/conclusion.html",
+    "href": "content/conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "This section will reiterate the importance of understanding pathogen evolution and population dynamics of a disease in order to understand what phylodynamics/phylogenetics are and why useful to epidemiologists.",
+    "crumbs": [
+      "Conclusion"
+    ]
+  },
+  {
     "objectID": "content/mini_analysis.html",
     "href": "content/mini_analysis.html",
     "title": "Mini Analysis",
@@ -256,9 +286,19 @@
     "href": "content/mini_analysis.html#epidemiological-model-sir",
     "title": "Mini Analysis",
     "section": "Epidemiological Model : SIR",
-    "text": "Epidemiological Model : SIR\nTo start, we can set up an example of what an SIR model might look like in the population and change around parameters to see what happens.\nCredit for this tutorial goes to the MIDAS-CCDD Outreach Conference on March 4th 2024, adapted from material from Professor Mathew Kiang and Dr.Stephen Kissler.\n\nPreliminaries\n\n# Install deSolve package (will only need to be done once)\ninstall.packages(\"deSolve\", dep = TRUE)\n\n\nlibrary(deSolve)\n\nThe deSolve package will help us with the math behind the SIR model example.\n\n\nSetting up the SIR model\n\ndt &lt;- seq(from = 1 , to= 365 , by= 1)\n\nfor the draft version I will leave it at this for now :)",
+    "text": "Epidemiological Model : SIR\nTo start, we can set up an example of what an SIR model might look like in the population and change around parameters to see what happens.\nCredit for this tutorial goes to the MIDAS-CCDD Outreach Conference on March 4th 2024, adapted from material from Professor Mathew Kiang and Dr.Stephen Kissler.\n\nPreliminaries\n\n# Install deSolve package (will only need to be done once)\ninstall.packages(\"deSolve\", dep = TRUE)\n\n\nlibrary(deSolve)\n\nThe deSolve package will help us with the math behind the SIR model example.\n\n\nSetting up the SIR model\n\ndt &lt;- seq(from = 1 , to= 365 , by= 1)\n\nfor the draft version I will leave the SIR model example like this for now.\nFurther potential sections:\n\nbuilding and dating a tree, and interpreting growth rate",
     "crumbs": [
       "Mini Analysis"
+    ]
+  },
+  {
+    "objectID": "content/evol_trees.html",
+    "href": "content/evol_trees.html",
+    "title": "Evolutionary Trees (phylogenetics)",
+    "section": "",
+    "text": "Very rough draft of this section:\nBasic phylogenetics definition: the scientific study of the evolutionary history and relationships among individuals, groups of organisms (taxa), or genes (wikipedia). In this case we are focused on the genes of pathogens\nan introduction to phylogenetic trees. Explains how trees are built and what each part of the tree means. Terms like root, internal nodes, terminal nodes (“tips”), branches, outgroup, etc. will be defined. Below is an example of explanations from my own notes.\n\n\n\nTree example from my own notes.\n\n\nAlso to be explained:\nEpidemiological Interpretation of Trees: branching patterns, length of branches, how trees reflect things like transmission dynamics and growth rate. Pathogen mutations. Importance of the topic",
+    "crumbs": [
+      "Evolutionary Trees"
     ]
   }
 ]
