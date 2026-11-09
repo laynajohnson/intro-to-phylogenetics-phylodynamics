@@ -1,5 +1,128 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Phylogenetics and Phylodynamics",
+    "section": "",
+    "text": "This tutorial explores the importance of phylogenetics and phylodynamics in epidemiology and infectious disease dynamics. We will introduce essential topics including population-level epidemiological models, evolutionary trees, and phylodynamics. The mini analysis section includes R code and simulated data for deeper understanding. Important terms will be defined both in text and in the glossary for reference.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Introduction to Phylogenetics and Phylodynamics",
+    "section": "",
+    "text": "This tutorial explores the importance of phylogenetics and phylodynamics in epidemiology and infectious disease dynamics. We will introduce essential topics including population-level epidemiological models, evolutionary trees, and phylodynamics. The mini analysis section includes R code and simulated data for deeper understanding. Important terms will be defined both in text and in the glossary for reference.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#motivation",
+    "href": "index.html#motivation",
+    "title": "Introduction to Phylogenetics and Phylodynamics",
+    "section": "Motivation",
+    "text": "Motivation\nIn order to understand dynamics of an infectious disease, you have to have some knowledge on how the disease spreads in the human population and how the disease can mutate and evolve over time.\nThink of COVID-19. Epidemiologists must understand how COVID-19 behaves in the population: When someone is infected, how many others are they likely to infect? Does infection create partial immunity, and when can someone become reinfected? What is the incubation period? How do vaccinations disrupt the chain of infection? They also seek to understand mutations of COVID-19: What are the characteristics of mutations like Omicron? How do these mutations come to be and how are they related?\nThe interplay of these two systems make it difficult to link pathogen dynamics and genetic diversity quantitatively.(unifying epi and evol)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/glossary.html",
+    "href": "content/glossary.html",
+    "title": "Glossary of Terms",
+    "section": "",
+    "text": "The following are terms and definitions found throughout the tutorial:\n\nSIR model: A compartmental model that stands for Susceptible, Infected, Recovered. Individuals can move through these different compartments as a disease spreads in the population by some mathematical process.\n\nImagine there are more important definitions here, this is just an idea of what it will look like",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "content/pop_level_epi.html",
+    "href": "content/pop_level_epi.html",
+    "title": "Population-Level Epidemiologic Models",
+    "section": "",
+    "text": "The primary question we are asking here is this: How does a disease spread in the population? We can translate this process into a mathematical model.\nThe main type of model we will focus on is called an SIR model: Susceptible, Infected, Recovered. These are the three compartments, that an individual in the population can be in with regards to a specific disease. There are other more complicated kinds of models as well such as SIRS (meaning you become susceptible to the disease again after some time), SEIR (additional compartment for exposed), and more. Models can become more complex depending on the specific process of some disease. Likewise, the mathematical models can become more complex.\nEach compartmental model for a disease has some specific mathematical equation behind each movement of individuals in the population across the compartments. These equations are called ordinary differential equations (ODEs), which will be explained in this tutorial.\nWe can think about the three compartments of the SIR model as buckets.\n\n\n\nCompartmental model bucket example.\n\n\nDifference equations\n\\[\n\\textcolor{#2042c7}{\\text{Bucket A }(t+1)} =\\textcolor{#2042c7}{\\text{Bucket A }(t)} \\textcolor{gray}{- \\text{flow } A-B}\\\\\n\\textcolor{#4395a3}{\\text{Bucket B }(t+1)} = \\textcolor{#4395a3}{\\text{Bucket B }(t)} \\textcolor{gray}{+ \\text{flow } A-B} \\textcolor{#db8309}{-\\text{flow }B - C}\\\\\n\\textcolor{#8cc9f5}{\\text{Bucket C } (t+1)} = \\textcolor{#8cc9f5}{\\text{Bucket C }(t)} \\textcolor{#db8309}{+\\text{flow }B - C}\n\\]\nNext steps:\n\nadding in and explaining the ODEs that are a part of the SIR model\nConclusion of importance to understanding these models\n\nSource: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler",
+    "crumbs": [
+      "Epidemiological Models"
+    ]
+  },
+  {
+    "objectID": "content/pop_level_epi.html#sir-models",
+    "href": "content/pop_level_epi.html#sir-models",
+    "title": "Population-Level Epidemiologic Models",
+    "section": "",
+    "text": "The primary question we are asking here is this: How does a disease spread in the population? We can translate this process into a mathematical model.\nThe main type of model we will focus on is called an SIR model: Susceptible, Infected, Recovered. These are the three compartments, that an individual in the population can be in with regards to a specific disease. There are other more complicated kinds of models as well such as SIRS (meaning you become susceptible to the disease again after some time), SEIR (additional compartment for exposed), and more. Models can become more complex depending on the specific process of some disease. Likewise, the mathematical models can become more complex.\nEach compartmental model for a disease has some specific mathematical equation behind each movement of individuals in the population across the compartments. These equations are called ordinary differential equations (ODEs), which will be explained in this tutorial.\nWe can think about the three compartments of the SIR model as buckets.\n\n\n\nCompartmental model bucket example.\n\n\nDifference equations\n\\[\n\\textcolor{#2042c7}{\\text{Bucket A }(t+1)} =\\textcolor{#2042c7}{\\text{Bucket A }(t)} \\textcolor{gray}{- \\text{flow } A-B}\\\\\n\\textcolor{#4395a3}{\\text{Bucket B }(t+1)} = \\textcolor{#4395a3}{\\text{Bucket B }(t)} \\textcolor{gray}{+ \\text{flow } A-B} \\textcolor{#db8309}{-\\text{flow }B - C}\\\\\n\\textcolor{#8cc9f5}{\\text{Bucket C } (t+1)} = \\textcolor{#8cc9f5}{\\text{Bucket C }(t)} \\textcolor{#db8309}{+\\text{flow }B - C}\n\\]\nNext steps:\n\nadding in and explaining the ODEs that are a part of the SIR model\nConclusion of importance to understanding these models\n\nSource: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler",
+    "crumbs": [
+      "Epidemiological Models"
+    ]
+  },
+  {
+    "objectID": "quarto-workflows/browser.html",
+    "href": "quarto-workflows/browser.html",
+    "title": "From the Browser",
+    "section": "",
+    "text": "A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.\nHere’s an example of editing content on an existing page."
+  },
+  {
+    "objectID": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
+    "href": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
+    "title": "From the Browser",
+    "section": "Edit content on an existing page",
+    "text": "Edit content on an existing page\nLet’s change the date on the home page of this website.\nIn your repository, navigate to index.md. Then, click the pencil icon in the top right to edit directly.\n\n\n\n\n\nWe are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.\n\n\n\n\n\nWhile you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.\nOur index.md file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with # symbols, bold or italic with * symbols, and hyperlinks with [](). Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: https://quarto.org/docs/authoring/markdown-basics."
+  },
+  {
+    "objectID": "quarto-workflows/browser.html#commit-and-publish",
+    "href": "quarto-workflows/browser.html#commit-and-publish",
+    "title": "From the Browser",
+    "section": "Commit and publish",
+    "text": "Commit and publish\nCommit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green “Commit changes” button.\n\n\n\n\n\nNow, click back to the main page of your GitHub repository. You should see the orange dot confirming your website is published. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!"
+  },
+  {
+    "objectID": "quarto-workflows/browser.html#limitations",
+    "href": "quarto-workflows/browser.html#limitations",
+    "title": "From the Browser",
+    "section": "Limitations",
+    "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
+  },
+  {
+    "objectID": "quarto-workflows/index.html",
+    "href": "quarto-workflows/index.html",
+    "title": "Quarto workflows",
+    "section": "",
+    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#basic-workflow",
+    "href": "quarto-workflows/index.html#basic-workflow",
+    "title": "Quarto workflows",
+    "section": "",
+    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#authoring",
+    "href": "quarto-workflows/index.html#authoring",
+    "title": "Quarto workflows",
+    "section": "Authoring",
+    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
+    "href": "quarto-workflows/index.html#update-_quarto.yml",
+    "title": "Quarto workflows",
+    "section": "Update _quarto.yml",
+    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache."
+  },
+  {
+    "objectID": "quarto-workflows/index.html#install-quarto",
+    "href": "quarto-workflows/index.html#install-quarto",
+    "title": "Quarto workflows",
+    "section": "Install Quarto",
+    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters."
+  },
+  {
     "objectID": "quarto-workflows/rstudio.html",
     "href": "quarto-workflows/rstudio.html",
     "title": "From RStudio",
@@ -54,99 +177,6 @@
     "title": "From RStudio",
     "section": "Troubleshooting",
     "text": "Troubleshooting\nIf you have trouble rendering your website after for example changing the extenstion of a file from .md to .qmd, refreshing your RStudio often helps. Do this by clicking the project name at the upper right of the RStudio window (in this case, quarto-website-tutorial), and underneath the “close project” section, click the same name of your project: quarto-website-tutorial. This will relaunch your whole project afresh."
-  },
-  {
-    "objectID": "quarto-workflows/browser.html",
-    "href": "quarto-workflows/browser.html",
-    "title": "From the Browser",
-    "section": "",
-    "text": "A workflow from the browser if good for getting started (since you do not need to install additional software) and for making small contributions, but is definitely limited. Once you feel comfortable here, you can move to a different setup.\nHere’s an example of editing content on an existing page."
-  },
-  {
-    "objectID": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
-    "href": "quarto-workflows/browser.html#edit-content-on-an-existing-page",
-    "title": "From the Browser",
-    "section": "Edit content on an existing page",
-    "text": "Edit content on an existing page\nLet’s change the date on the home page of this website.\nIn your repository, navigate to index.md. Then, click the pencil icon in the top right to edit directly.\n\n\n\n\n\nWe are now in the “Edit file” tab of the editor, where we can make modifications. Let’s change the date to today’s date. Click the “Preview” tab to see your changes. You can even check the “Show diff” box on the right side to see the changes you’ve made.\n\n\n\n\n\nWhile you’re here, see if there are additional changes to the text you’d like to make. Maybe changing the title or author at the top, or for the main text on the home page of the website.\nOur index.md file is written in Markdown, which enables you to make simple text formatting. As you go back and forth from “Edit file” to “Preview”, notice the patterns of how the Markdown text looks when it is as source (“Edit file”) and when it is formatted (“Preview”). For example, in Markdown, you can make text as a header with # symbols, bold or italic with * symbols, and hyperlinks with [](). Notice that spacing is important: for example, there are carriage returns (when you hit the “return” key) before any bullet points. You can learn the short list of Markdown rules here: https://quarto.org/docs/authoring/markdown-basics."
-  },
-  {
-    "objectID": "quarto-workflows/browser.html#commit-and-publish",
-    "href": "quarto-workflows/browser.html#commit-and-publish",
-    "title": "From the Browser",
-    "section": "Commit and publish",
-    "text": "Commit and publish\nCommit your changes by scrolling to the bottom of the page and writing a commit message - a note to yourself and others about what changes you made. Write your commit message and then click the green “Commit changes” button.\n\n\n\n\n\nNow, click back to the main page of your GitHub repository. You should see the orange dot confirming your website is published. You’ll have to wait for the GitHub Action to tell quarto to build your site for you to see the update, but it will be there!"
-  },
-  {
-    "objectID": "quarto-workflows/browser.html#limitations",
-    "href": "quarto-workflows/browser.html#limitations",
-    "title": "From the Browser",
-    "section": "Limitations",
-    "text": "Limitations\nWhile awesome that we can edit using GitHub directly from the browser, there are obvious limitations. One is that to see your edits show up in your book, you have to publish using the GitHub Action. This is slow. Another limitation is that we can only work on one file at a time and commit them each separately, which also is slow. Using additional software can make things much better, as we explore in subsequent chapters."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to Phylogenetics and Phylodynamics",
-    "section": "",
-    "text": "This site seeks to introduce the importance of phylogenetics and phylodynamics in epidemiology and infectious disease dynamics. This website will explore essential topics including population-level epidemiological models, evolutionary trees, and phylodynamics. There is also a mini analysis section which includes R code and simulated data for deeper understanding. Important terms will be defined both in text and in the glossary for reference.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Introduction to Phylogenetics and Phylodynamics",
-    "section": "",
-    "text": "This site seeks to introduce the importance of phylogenetics and phylodynamics in epidemiology and infectious disease dynamics. This website will explore essential topics including population-level epidemiological models, evolutionary trees, and phylodynamics. There is also a mini analysis section which includes R code and simulated data for deeper understanding. Important terms will be defined both in text and in the glossary for reference.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#motivation",
-    "href": "index.html#motivation",
-    "title": "Introduction to Phylogenetics and Phylodynamics",
-    "section": "Motivation",
-    "text": "Motivation\nIn order to understand dynamics of an infectious disease, you have to have some knowledge on how the disease spreads in the human population and how the disease can mutate and evolve over time.\nThink of COVID-19. Epidemiologists must understand how COVID-19 behaves in the population: When someone is infected, how many others are they likely to infect? Does infection create partial immunity, and when can someone become reinfected? What is the incubation period? How do vaccinations disrupt the chain of infection? They also seek to understand mutations of COVID-19: What are the characteristics of mutations like Omicron? How do these mutations come to be and how are they related?\nThe interplay of these two systems make it difficult to link pathogen dynamics and genetic diversity quantitatively.(unifying epi and evol)\ntest2",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "quarto-workflows/index.html",
-    "href": "quarto-workflows/index.html",
-    "title": "Quarto workflows",
-    "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#basic-workflow",
-    "href": "quarto-workflows/index.html#basic-workflow",
-    "title": "Quarto workflows",
-    "section": "",
-    "text": "How do you work in Quarto? You can use whichever tool you’re comfortable with (RStudio, Jupyter, GitHub, VS Code, etc). Developing your quarto site will have the same basic workflow, no matter which tool you use. It is very iterative, and each is explored more below.\n\nAuthoring: write text, code, images, etc in a file. Supported files include .md, .Rmd, .qmd, .ipynb…\nUpdate _quarto.yml as needed (for example, if you’ve created a new file you’d like included in your site)\nRender individual files and/or the whole website\nRepeat, repeat, repeat\nCommit and push your website to GitHub, your updates will publish automatically!\nRepeat all of the above to make the website as you’d like!\n\nNote: if editing from your internet browser we won’t render in Step 3. That step will not be separate, but combined with Step 5, which will only require a commit, not a push."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#authoring",
-    "href": "quarto-workflows/index.html#authoring",
-    "title": "Quarto workflows",
-    "section": "Authoring",
-    "text": "Authoring\nAs an author, you have a lot of options of how your text will be formatted, arranged, and interlinked. You will be writing in Markdown, which is a lightweight text formatting language. The Quarto documentation about authoring introduces markdown-basics that will get you started. Also see Mine Çetinkaya-Rundel’s A Quarto tip a day.\nEach page of our site has a similar first few lines - this YAML, like we saw in our _quarto.yml and it is indicated by two sets of 3 dashes --- :\n---\ntitle: My title\n---\nYou’re able to add more features to individual pages by including it in the YAML, which for the most part here only includes a title. See Quarto excecution options for more information of what you can include in the YAML."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#update-_quarto.yml",
-    "href": "quarto-workflows/index.html#update-_quarto.yml",
-    "title": "Quarto workflows",
-    "section": "Update _quarto.yml",
-    "text": "Update _quarto.yml\nLet’s have a closer look at the _quarto.yml file.\nThis type of file (.yml or .yaml) is written in YAML (“Yet Another Markup Language”). You’ll be able to shift the arrangement of webpages by reordering/adding/deleting them in the _quarto.yml file following the patterns you see in this example.\n\n\n\n_quarto.yml and website side-by-side\n\n\nNotice that there are multiple ways in the _quarto.yml for you to include a file in your website. For example, in the above image, the “First Observations” we see in the left sidebar of the published website (right image) is represented in _quarto.yml (left image) over two lines, with line 36 indicating the file reference and line 37 indicating the text to show up in the left sidebar. However, “From RStudio” is only represented in one line of _quarto.yml, on line 43. This represents two strategies for including a file in your website. By default, the title of a specified file will show up in the website’s sidebar, which is what is happening with the “From RStudio” example. If you would like more control over what is written in the sidebar vs the title of your files, then the approach we took with “First Observations” is what you’ll want to do: you’ll see that only “First Observations” shows up in the sidebar as we specified in _quarto.yml, but the page’s title says “First Observations & Setup” (which in our preference was too long for the sidebar).\n\n\n\n\n\n\nNote\n\n\n\nAs you modify _quarto.yml, the most important thing to know is that spacing matters. Pay attention to whether text is indented by one, two, four, or other spaces, and make sure you follow it; if your site is not looking as expected it is likely a silent error in your YAML. Some text editors like RStudio provide debugging support for YAML and are highly recommended to save you time and heartache."
-  },
-  {
-    "objectID": "quarto-workflows/index.html#install-quarto",
-    "href": "quarto-workflows/index.html#install-quarto",
-    "title": "Quarto workflows",
-    "section": "Install Quarto",
-    "text": "Install Quarto\nhttps://quarto.org/docs/get-started/ describes how to install Quarto, which will depend on your operating system. We’ll walk through installation for each tool in the next chapters."
   },
   {
     "objectID": "quarto-workflows/jupyter.html",
@@ -210,5 +240,25 @@
     "title": "From Jupyter",
     "section": "Troubleshooting",
     "text": "Troubleshooting\n\nMy changes don’t show up in preview\nMake sure you’ve saved your file! There might be a slight delay depending on your JupyterHub/Lab setup.\n\n\nQuarto render hangs / does not complete\nCheck the specific notebook, are there any `—` throughout to denote line breaks rather than yaml? They might be causing the issue; consider deleting those.\nAlso check how long the first raw cell is. Are there level-1 headers (#)? Try removing them."
+  },
+  {
+    "objectID": "content/mini_analysis.html",
+    "href": "content/mini_analysis.html",
+    "title": "Mini Analysis",
+    "section": "",
+    "text": "In this section, we will see how some of the ideas we learned in earlier sections can look in data analysis. Feel free to follow along with the code using R on your own machine.",
+    "crumbs": [
+      "Mini Analysis"
+    ]
+  },
+  {
+    "objectID": "content/mini_analysis.html#epidemiological-model-sir",
+    "href": "content/mini_analysis.html#epidemiological-model-sir",
+    "title": "Mini Analysis",
+    "section": "Epidemiological Model : SIR",
+    "text": "Epidemiological Model : SIR\nTo start, we can set up an example of what an SIR model might look like in the population and change around parameters to see what happens.\nCredit for this tutorial goes to the MIDAS-CCDD Outreach Conference on March 4th 2024, adapted from material from Professor Mathew Kiang and Dr.Stephen Kissler.\n\nPreliminaries\n\n# Install deSolve package (will only need to be done once)\ninstall.packages(\"deSolve\", dep = TRUE)\n\n\nlibrary(deSolve)\n\nThe deSolve package will help us with the math behind the SIR model example.\n\n\nSetting up the SIR model\n\ndt &lt;- seq(from = 1 , to= 365 , by= 1)\n\nfor the draft version I will leave it at this for now :)",
+    "crumbs": [
+      "Mini Analysis"
+    ]
   }
 ]
