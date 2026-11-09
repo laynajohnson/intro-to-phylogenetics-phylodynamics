@@ -23,9 +23,9 @@ website:
       - href: index.qmd
         text: Home
       - href: content/pop_level_epi.qmd
-        text: Population-Level Epidemiological Models
+        text: Epidemiological Models
       - href: content/evol_trees.qmd
-        text: Phylogenetics-Understanding Evolutionary Trees
+        text: Evolutionary Trees
       - href: content/phylodynamics.qmd
         text: Phylodynamics
       - href: content/mini_analysis.qmd

@@ -1,5 +1,11 @@
 ---
-title: "glossary"
+title: "Glossary of Terms"
 format: html
 ---
 
+The following are terms and definitions found throughout the tutorial:
+
+- *SIR model*: A compartmental model that stands for Susceptible, Infected, Recovered. Individuals can move through these different compartments as a disease spreads in the population by some mathematical process.
+
+
+Imagine there are more important definitions here, this is just an idea of what it will look like
