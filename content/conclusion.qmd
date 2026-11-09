@@ -1,5 +1,6 @@
 ---
-title: "conclusion"
+title: "Conclusion"
 format: html
 ---
 
+This section will reiterate the importance of understanding pathogen evolution and population dynamics of a disease in order to understand what phylodynamics/phylogenetics are and why useful to epidemiologists.

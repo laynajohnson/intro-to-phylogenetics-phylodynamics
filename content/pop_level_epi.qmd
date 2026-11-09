@@ -13,7 +13,7 @@ Each compartmental model for a disease has some specific mathematical equation b
 
 We can think about the three compartments of the SIR model as buckets. 
 
-![Compartmental model bucket example.](figures/buckets-flow.jpg){width=50%}
+![Compartmental model bucket example.](figures/buckets-flow.JPG){width=50%}
 
 Difference equations
 
@@ -25,7 +25,7 @@ $$
 
 Next steps:
 
-- adding in and explaining the ODEs that are a part of the SIR model
+- adding in and explaining the ODEs that are a part of the SIR model. They explain how the population moves through the compartments of the SIR model based on the dynamics of the disease
 - Conclusion of importance to understanding these models
 
 

@@ -3,3 +3,11 @@ title: "Phylodynamics"
 format: html
 ---
 
+Another *very* rough draft:
+
+This section will connect the SIR models and tree shapes into the framework of phylodynamics. Explains how the evolution of a pathogen relates to its transmission
+
+Basic phylodynamics definition: the interdisciplinary study of how epidemiological, immunological, and evolutionary processes interact to shape the genetic trees (phylogenies) of pathogens over time and space (Wikipedia)
+
+- Combines rapid pathogen evolution (mutations happening over days or months) with host population dynamics (spread, immunity, and behavior) (ScienceDirect.com)
+

@@ -31,4 +31,8 @@ The `deSolve` package will help us with the math behind the SIR model example.
 dt <- seq(from = 1 , to= 365 , by= 1)
 ```
 
-for the draft version I will leave it at this for now :)
+for the draft version I will leave the SIR model example like this for now.
+
+Further potential sections:
+
+- building and dating a tree, and interpreting growth rate
