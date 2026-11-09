@@ -14,6 +14,7 @@ Each compartmental model for a disease has some specific mathematical equation b
 We can think about the three compartments of the SIR model as buckets. 
 
 ![Compartmental model bucket example.](figures/buckets-flow.jpg){width=50%}
+
 Difference equations
 
 $$
@@ -22,7 +23,10 @@ $$
 \textcolor{#8cc9f5}{\text{Bucket C } (t+1)} = \textcolor{#8cc9f5}{\text{Bucket C }(t)} \textcolor{#db8309}{+\text{flow }B - C}
 $$
 
+Next steps:
 
+- adding in and explaining the ODEs that are a part of the SIR model
+- Conclusion of importance to understanding these models
 
 
 Source: Presentation by Dr.Kirstin Oliveira Roster, adapted from Dr.Stephen Kissler

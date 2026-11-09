@@ -18,7 +18,7 @@ Credit for this tutorial goes to the MIDAS-CCDD Outreach Conference on March 4th
 install.packages("deSolve", dep = TRUE)
 ```
 
-```{r warning=false}
+```{r warning= FALSE}
 library(deSolve)
 ```
 
